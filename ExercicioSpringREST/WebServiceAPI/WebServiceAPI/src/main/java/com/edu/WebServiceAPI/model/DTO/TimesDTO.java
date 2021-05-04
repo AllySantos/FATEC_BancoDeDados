@@ -1,18 +1,18 @@
-package com.edu.WebServiceAPI.modelEntity;
+package com.edu.WebServiceAPI.model.DTO;
 
-public class Times {
-    private long id;
+public class TimesDTO {
+
+    private int id;
     private String nome;
     private String cidade;
 
-    public long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
-
 
     public String getNome() {
         return nome;
@@ -28,5 +28,14 @@ public class Times {
 
     public void setCidade(String cidade) {
         this.cidade = cidade;
+    }
+
+    @Override
+    public String toString() {
+        return "Times{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                ", cidade='" + cidade + '\'' +
+                '}';
     }
 }

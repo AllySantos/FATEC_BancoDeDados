@@ -95,3 +95,13 @@ VALUES
 
 
 SELECT * FROM fn_jogadoridade(900103)
+
+
+select j.codigo, j.nomeJogador, j.sexo, j.altura, convert(char(10), j.dt_nasc, 103) as dt_nasc, j.id_time, t.id, t.nome, t.cidade
+from jogador j, times t
+where j.id_time = t.id
+
+select j.codigo, j.nomeJogador, j.sexo, j.altura, convert(char(10), j.dt_nasc, 103) as dt_nasc, j.id_time, t.id, t.nome, t.cidade
+from jogador j, times t
+where j.id_time = t.id
+	and j.codigo = 900103
