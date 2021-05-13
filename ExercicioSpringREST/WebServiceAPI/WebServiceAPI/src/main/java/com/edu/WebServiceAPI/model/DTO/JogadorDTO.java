@@ -1,6 +1,5 @@
 package com.edu.WebServiceAPI.model.DTO;
 
-import com.edu.WebServiceAPI.model.entity.Times;
 
 public class JogadorDTO {
 
@@ -10,7 +9,7 @@ public class JogadorDTO {
     private float altura;
     private String dt_nasc;
     private int idade;
-    private Times times;
+    private TimesDTO times;
 
     public int getCodigo() {
         return codigo;
@@ -60,11 +59,11 @@ public class JogadorDTO {
         this.idade = idade;
     }
 
-    public Times getTimes() {
+    public TimesDTO getTimes() {
         return times;
     }
 
-    public void setTimes(Times times) {
+    public void setTimes(TimesDTO times) {
         this.times = times;
     }
 

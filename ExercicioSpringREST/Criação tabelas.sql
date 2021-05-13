@@ -24,3 +24,5 @@ create table jogador(
 		check((sexo = 'M' and altura >=1.7) or 
 				(sexo = 'F' and altura >=1.6))
 )
+
+
